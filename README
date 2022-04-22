@@ -1,1 +1,45 @@
 # Respuestas del Trabajo Integrador: swing-arraylist
+
+# TAREA 1
+
+# 4.1 Responder: ¿Cuál es la finalidad de un constructor?
+# La finalidad de un constructor es la de crear el objeto, instanciarlo, para poder comenzar a trabajar con el por medio del programa.
+
+# 5.1 Responder: ¿Cuál es la finalidad de los métodos de acceso?
+# Su finalidad es la, valga la redundancia, acceder a las variables del objeto, las cuales son privadas. De esta forma obtendremos o podremos editar la informacion
+# de forma rapida a lo largo del programa. Por ejemplo, si el programa se emplea para un banco, con el metodo get podriamos saber cuanto dinero tiene una persona
+# si llamamos a esa variable, mientras que con set podriamos cambiar cuanto saldo les queda si se hace una transacción.
+
+# TAREA 3
+
+# 1.1 Responder: ¿Qué es una variable global?
+# Una variable global es un atributo conocido por todo el programa, por ende podria ser manipulado por cualquier función. Su contrapartida son las variables locales,
+# las cuales solo son conocidas en el método donde fueron creadas y se usan para operaciones unicas de esa función.
+
+# 1.2 Investigación: ¿Cuál es la diferencia entre un arreglo ordinario y la clase ArrayList?
+# El arreglo ordinario tiene su cantidad limitada al momento de crearse. Por otro lado, la clase ArrayList es un arreglo dinamico, además de que va comparando si los
+# datos colocados son del tipo correcto.
+
+# 1.3 Investigación: ¿Cuál es la utilidad de la clase DefaultTableModel?
+# La utilidad que tiene la clase DefaultTableModel es la de poder, mediante sus métodos, editar los datos de un JTable tales como: Añadir filas o columnas, y darle
+# a cada columna el nombre que querramos.
+
+# 2.1 Responder: ¿Qué constructores existen para el objeto dtm DefaultTableModel y cuál estamos usando en este proyecto (consultar la API de java)
+# Existen los siguientes 6 constructores para el objeto DefaultTableModel:
+# 1- DefaultTableModel() = Construye una tabla con 0 filas y 0 columnas
+# 2- DefaultTableModel(int rowCount, int columnCount) = Construye una tabla con los parametros que le pasamos o ninguno | Empleamos este para el proyecto actual.
+# 3- DefaultTableModel(Object[][] data, Object[] columnNames) = Construye la tabla e inicializa la misma con los valores pasados al metodo setDataVector.
+# 4- DefaultTableModel(Object[] columnNames, int rowCount) = Construye la tabla con tantas columnas como atributos asignados hay en la funcion.
+# 5- DefaultTableModel(Vector columnNames, int rowCount) = Construye la tabla con tantas columnas como atributos asignados hay en la funcion.
+# 6- DefaultTableModel(Vector data, Vector columnNames) = Construye la tabla e inicializa la misma con los valores pasados al metodo setDataVector.
+
+# 3.1 Responder: ¿Qué función cumple el método getText()?
+# El método getText() nos permite recuperar la información colocada en los campos de texto de la aplicación.
+
+# 4.1 Responder: ¿Por qué se utiliza la variable Object[] en vez de un String[]?
+# Porque la variable Object[] es más facil de manipular que la variable String[], ya que cada campo corresponde a una variable en particular, en cambio en el
+# String[] tenemos una cadena de texto completa y es mas dificil de recuperar la información.
+
+# 6.1 Responder: Explicá la instrucción txtId.setText(dtm.getValueAt(row, 0).toString());
+# La instrucción se encarga de que en el campo de texto del ID del alumno se rellene con el texto de la fila seleccionada y la columna 0 (columna donde estan todas
+# las ID) el cual se ve transformado a un String.
